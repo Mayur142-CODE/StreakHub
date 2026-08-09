@@ -34,9 +34,9 @@ export default function AuthLayout({
         <div>
           <blockquote className="space-y-2">
             <p className="text-lg text-background/80">
-              &ldquo;Discipline is the bridge between goals and accomplishment.&rdquo;
+              &ldquo;Small daily improvements over time lead to stunning results.&rdquo;
             </p>
-            <footer className="text-sm text-background/60">Jim Rohn</footer>
+            <footer className="text-sm text-background/60">Robin Sharma</footer>
           </blockquote>
         </div>
       </div>
