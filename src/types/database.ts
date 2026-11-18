@@ -202,6 +202,37 @@ export interface Database {
           timezone?: string
         }
       }
+      notes_items: {
+        Row: {
+          id: string
+          user_id: string
+          parent_id: string | null
+          name: string
+          type: 'folder' | 'file'
+          content: string | null
+          created_at: string
+          updated_at: string
+        }
+        Insert: {
+          id?: string
+          user_id: string
+          parent_id?: string | null
+          name: string
+          type: 'folder' | 'file'
+          content?: string | null
+          created_at?: string
+          updated_at?: string
+        }
+        Update: {
+          id?: string
+          user_id?: string
+          parent_id?: string | null
+          name?: string
+          type?: 'folder' | 'file'
+          content?: string | null
+          updated_at?: string
+        }
+      }
     }
   }
 }
@@ -212,8 +243,11 @@ export type DailyEntry = Database['public']['Tables']['daily_entries']['Row']
 export type Achievement = Database['public']['Tables']['achievements']['Row']
 export type UserAchievement = Database['public']['Tables']['user_achievements']['Row']
 export type Reminder = Database['public']['Tables']['reminders']['Row']
+export type NotesItem = Database['public']['Tables']['notes_items']['Row']
 
 export type CategoryInsert = Database['public']['Tables']['categories']['Insert']
 export type CategoryUpdate = Database['public']['Tables']['categories']['Update']
 export type DailyEntryInsert = Database['public']['Tables']['daily_entries']['Insert']
 export type DailyEntryUpdate = Database['public']['Tables']['daily_entries']['Update']
+export type NotesItemInsert = Database['public']['Tables']['notes_items']['Insert']
+export type NotesItemUpdate = Database['public']['Tables']['notes_items']['Update']

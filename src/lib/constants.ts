@@ -61,6 +61,7 @@ export const ACHIEVEMENTS: AchievementDef[] = [
 export const NAV_ITEMS = [
   { label: 'Dashboard', href: '/dashboard', icon: 'layout-dashboard' },
   { label: 'Categories', href: '/categories', icon: 'grid-3x3' },
+  { label: 'Notes', href: '/notes', icon: 'notebook' },
   { label: 'Statistics', href: '/statistics', icon: 'bar-chart-3' },
   { label: 'Achievements', href: '/achievements', icon: 'trophy' },
   { label: 'Profile', href: '/profile', icon: 'user' },

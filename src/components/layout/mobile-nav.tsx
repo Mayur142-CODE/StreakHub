@@ -15,11 +15,13 @@ import {
   User,
   Settings,
   LogOut,
+  Notebook,
 } from 'lucide-react'
 
 const iconMap: Record<string, React.ComponentType<{ className?: string }>> = {
   'layout-dashboard': LayoutDashboard,
   'grid-3x3': Grid3X3,
+  notebook: Notebook,
   'bar-chart-3': BarChart3,
   trophy: Trophy,
   user: User,
